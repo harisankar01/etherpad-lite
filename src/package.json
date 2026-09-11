@@ -124,7 +124,7 @@
     "test": "cross-env NODE_ENV=production mocha --import=tsx --timeout 120000 --recursive tests/backend/specs/**.ts ../node_modules/ep_*/static/tests/backend/specs/**",
     "test-utils": "cross-env NODE_ENV=production mocha --import=tsx --timeout 5000 --recursive tests/backend/specs/*utils.ts",
     "test-container": "mocha --import=tsx --timeout 5000 tests/container/specs/api",
-    "dev": "cross-env NODE_ENV=development  node --require tsx/cjs node/server.ts",
+    "dev": "node init && cross-env NODE_ENV=development  node --require tsx/cjs node/server.ts",
     "prod": "cross-env NODE_ENV=production node --require tsx/cjs node/server.ts",
     "ts-check": "tsc --noEmit",
     "ts-check:watch": "tsc --noEmit --watch",
